@@ -2,7 +2,6 @@ package LIstIssue_POJO;
 
 public class Links {
 
-
     private String self;
     private String notes;
     private String awardEmoji;

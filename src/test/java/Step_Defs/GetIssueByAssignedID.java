@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import services.Get_Issue_By_AssignedID;
 import services.List_Issues;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class GetIssueByAssignedID {
 
     @Test
@@ -14,6 +16,8 @@ public class GetIssueByAssignedID {
         Get_Issue_By_AssignedID getIssueByAssignedID=new Get_Issue_By_AssignedID();
 
         getIssueByAssignedID.getAssignedID();
+        getIssueByAssignedID.verification();
 
     }
+
 }

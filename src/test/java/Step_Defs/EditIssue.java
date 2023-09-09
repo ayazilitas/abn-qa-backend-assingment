@@ -11,6 +11,9 @@ public class EditIssue {
     public void editIssue(){
 
         Edit_Issue editIssue=new Edit_Issue();
+
         editIssue.updateIssue();
+        editIssue.verification();
+
     }
 }

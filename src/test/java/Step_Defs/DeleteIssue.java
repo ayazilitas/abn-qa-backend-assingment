@@ -12,7 +12,9 @@ public class DeleteIssue {
     public void deleteIssue(){
 
         Delete_Issue deleteIssue=new Delete_Issue();
+
         deleteIssue.deleteIssue();
+        deleteIssue.verification();
 
 
     }

@@ -11,7 +11,9 @@ public class ListIssues {
     public void listIssues(){
 
         List_Issues lIstIssues=new List_Issues();
+
         lIstIssues.listIssues();
+        lIstIssues.verification();
 
     }
 

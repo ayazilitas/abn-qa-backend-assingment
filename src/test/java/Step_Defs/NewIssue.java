@@ -11,9 +11,11 @@ public class NewIssue {
     @Test
     @DisplayName("TC1: New Issue")
 
-    public void newissue(){
+    public void newIssue(){
         New_Issue newIssue=new New_Issue();
+
         newIssue.newIssue();
+        newIssue.verification();
 
     }
 }

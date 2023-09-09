@@ -17,5 +17,8 @@ public class New_Issue {
         assertEquals(201, response.statusCode());
     }
 
+    public void verification(){
 
+        assertEquals(201, response.statusCode());
+    }
 }

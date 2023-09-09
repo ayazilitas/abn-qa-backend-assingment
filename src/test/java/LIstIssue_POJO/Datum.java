@@ -1,9 +1,7 @@
 package LIstIssue_POJO;
-
-
 import java.util.List;
 
-public class Issue {
+public class Datum {
 
 
     private Integer id;
@@ -51,7 +49,7 @@ public class Issue {
      * No args constructor for use in serialization
      *
      */
-    public Issue() {
+    public Datum() {
     }
 
     /**
@@ -97,7 +95,7 @@ public class Issue {
      * @param assignee
      * @param projectId
      */
-    public Issue(Integer id, Integer iid, Integer projectId, String title, String description, String state, String createdAt, String updatedAt, Object closedAt, Object closedBy, List<String> labels, Milestone milestone, List<Assignee> assignees, Author author, String type, Assignee__1 assignee, Integer userNotesCount, Integer mergeRequestsCount, Integer upvotes, Integer downvotes, String dueDate, Boolean confidential, Object discussionLocked, String issueType, String webUrl, TimeStats timeStats, TaskCompletionStatus taskCompletionStatus, Integer weight, Integer blockingIssuesCount, Boolean hasTasks, String taskStatus, Links links, References references, String severity, Object movedToId, Object serviceDeskReplyTo, Object epicIid, Object epic, Object iteration, Object healthStatus) {
+    public Datum(Integer id, Integer iid, Integer projectId, String title, String description, String state, String createdAt, String updatedAt, Object closedAt, Object closedBy, List<String> labels, Milestone milestone, List<Assignee> assignees, Author author, String type, Assignee__1 assignee, Integer userNotesCount, Integer mergeRequestsCount, Integer upvotes, Integer downvotes, String dueDate, Boolean confidential, Object discussionLocked, String issueType, String webUrl, TimeStats timeStats, TaskCompletionStatus taskCompletionStatus, Integer weight, Integer blockingIssuesCount, Boolean hasTasks, String taskStatus, Links links, References references, String severity, Object movedToId, Object serviceDeskReplyTo, Object epicIid, Object epic, Object iteration, Object healthStatus) {
         super();
         this.id = id;
         this.iid = iid;
@@ -464,7 +462,7 @@ public class Issue {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(Issue.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append(Datum.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("id");
         sb.append('=');
         sb.append(((this.id == null)?"<null>":this.id));
