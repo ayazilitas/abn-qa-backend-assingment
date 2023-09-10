@@ -7,13 +7,14 @@ import org.junit.jupiter.api.Test;
 public class ListIssues {
 
     @Test
-    @DisplayName("TC1: List Issues")
+    @DisplayName("TC2: List Issues")
     public void listIssues(){
 
+        //create an object from the List_Issues Class to call the methods
         List_Issues lIstIssues=new List_Issues();
 
-        lIstIssues.listIssues();
-        lIstIssues.verification();
+       lIstIssues.listIssues();
+       lIstIssues.Verification();
 
     }
 

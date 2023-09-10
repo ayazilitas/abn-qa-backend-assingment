@@ -7,10 +7,11 @@ import org.junit.jupiter.api.Test;
 public class DeleteIssue {
 
     @Test
-    @DisplayName("TC4 : Delete Issue")
+    @DisplayName("TC5 : Delete Issue")
 
     public void deleteIssue(){
 
+        //create an object from the Delete_Issue Class to call the methods
         Delete_Issue deleteIssue=new Delete_Issue();
 
         deleteIssue.deleteIssue();

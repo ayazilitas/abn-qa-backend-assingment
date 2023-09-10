@@ -10,9 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GetIssueByAssignedID {
 
     @Test
-    @DisplayName("TC1: List Issues")
-    public void listIssues(){
+    @DisplayName("TC3: Get Issue By Assigned ID")
+        public void listIssues(){
 
+        //create an object from the Get Issue By AssignedID Class to call the methods
         Get_Issue_By_AssignedID getIssueByAssignedID=new Get_Issue_By_AssignedID();
 
         getIssueByAssignedID.getAssignedID();
