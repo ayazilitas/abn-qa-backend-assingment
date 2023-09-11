@@ -1,7 +1,6 @@
 package services;
 
 import io.restassured.RestAssured;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -26,7 +25,11 @@ public class Edit_Issue {
 
     public void verification() {
 
-        assertEquals(200, response.statusCode());
+        //Verify the status code
+       assertEquals(200, response.statusCode());
+
+        //##########  For the Negative Tests  ##############
+   //     assertEquals(444, response.statusCode());
 
     }
 }

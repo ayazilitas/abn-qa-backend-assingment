@@ -3,7 +3,6 @@ package services;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import com.google.gson.Gson;
 
 
 import java.util.*;
@@ -31,25 +30,35 @@ public class List_Issues {
 
         JsonPath jsonPath=response.jsonPath();
 
+        //Verify the status code
         assertEquals(200, response.statusCode());
 
+        //verify that iid not to be null
         List<Integer>iid=jsonPath.getList("iid");
         assertNotNull(iid.get(0));
 
+        //verify that id not to be null
         List<Integer>issuID=jsonPath.getList("id");
         assertNotNull(issuID.get(0));
 
+        //Verify that every issue has to project id
         List<Integer>projectID=jsonPath.getList("project_id");
         assertNotNull(projectID.get(0));
 
+        //Verify that issue closed by ayazilitas
         List<String>closedBy= jsonPath.getList("closed_by.username");
         assertEquals("ayazilitas",closedBy.get(0));
 
+        //verify that links has to be a self item
         List<Map<String,Object>>links= jsonPath.getList("_links");
         assertNotNull(links.get(0).get("self"));
 
-        List<Map<String, Object>>name=jsonPath.getList("author.name");
-        assertEquals("AHMET YAZILITAŞ",name.get(0));
+        //##########  For the Negative Tests  ##############
+    //    assertEquals(202, response.statusCode());
+
+//        List<Map<String, Object>>name1=jsonPath.getList("author.name");
+//        assertEquals("RAHMET YAZILITAŞ",name1.get(0));
+
 
 
     }

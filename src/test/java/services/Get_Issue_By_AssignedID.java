@@ -26,15 +26,26 @@ public class Get_Issue_By_AssignedID {
 
     public void verification(){
 
+        //Verify the status code
         assertEquals(200, response.statusCode());
 
         JsonPath jsonPath=response.jsonPath();
 
-        List<String> username=jsonPath.getList("assignees.username[1]");
-        assertEquals("ayazilitas",username.get(0));
+        // verify that second index of the assignees username has to be ayazilitas
+        List<String> secondUsername=jsonPath.getList("assignees.username[1]");
+        assertEquals("ayazilitas",secondUsername.get(0));
 
-        List<Integer>webUrl=jsonPath.getList("author.web_url");
+        //Verify that author web url has to be https://gitlab.com/ayazilitas
+        List<String>webUrl=jsonPath.getList("author.web_url");
         assertEquals("https://gitlab.com/ayazilitas",webUrl.get(0));
+
+
+        //##########  For the Negative Tests  ##############
+        //  assertEquals(202, response.statusCode());
+
+//        List<Integer>webUrl2=jsonPath.getList("author.web_url");
+//        assertEquals("https://gitlab.com/ayazilitasRRRR",webUrl2.get(0));
+
 
     }
 

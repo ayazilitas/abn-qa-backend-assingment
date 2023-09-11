@@ -62,6 +62,11 @@ Following that, an automation testing framework was set up in IntelliJ. The test
 in Postman were executed automatically within this framework. In the final stage, after conducting all necessary checks, 
 the assignment, along with the Postman collection, was sent to the relevant individual.
 
+####*** Note: Since the request body was not used in the executed tests, a wide range of negative tests has not been 
+performed. Only a few example tests have been provided by manipulating a few status codes. Separate methods have not
+been written for these; they have been written within the verification methods and, after execution, commented out
+and left inactive.
+
 #### CREATING A COLLECTION IN POSTMAN (For Manual Testing)
 
 A Postman collection was created to encompass CRUD (Create, Read, Update, Delete) operations. An environment was
@@ -72,11 +77,10 @@ It was observed that the tests ran successfully.
 
 #### CREATING A FRAMEWORK IN INTELLIJ (For Automation Testing)
 
-To automate the tests, an automation framework was developed following the Page Object Model in IntelliJ IDE. 
+To automate the tests, an automation framework was created following the Page Object Model in IntelliJ IDE. 
 The necessary RestAssured  library for automation were included in the pom.xml file. Two packages were
 created, namely 'Services' and 'Step_Defs.' In the 'Services' package, methods were written to execute the 
 corresponding endpoints and assert their outcomes. It was verified that all the tests ran successfully.
-
 
 #### CLOSURE THE ASSIGNMENT  
 

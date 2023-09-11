@@ -27,15 +27,16 @@ public class New_Issue {
     //Run the positive tests to make sure the end points are working as expected
     public void verification(){
 
+        //Verify the status code
         assertEquals(201, response.statusCode());
 
         JsonPath jsonPath=response.jsonPath();
 
+        //Verify that new issue label has to be ABN-AMSTERDAM_ROTTERDAM
        assertEquals("ABN-AMSTERDAM_ROTTERDAM",jsonPath.getList("labels").get(0));
 
-
-
-
+        //##########  For the Negative Tests  ##############
+       // assertEquals(209, response.statusCode());
 
     }
 }
