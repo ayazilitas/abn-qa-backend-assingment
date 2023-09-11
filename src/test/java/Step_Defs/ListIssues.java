@@ -13,7 +13,10 @@ public class ListIssues {
         //create an object from the List_Issues Class to call the methods
         List_Issues lIstIssues=new List_Issues();
 
+        //call the request method
        lIstIssues.listIssues();
+
+        //call the verification method
        lIstIssues.Verification();
 
     }

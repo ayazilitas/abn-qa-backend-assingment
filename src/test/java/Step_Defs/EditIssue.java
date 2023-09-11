@@ -14,7 +14,10 @@ public class EditIssue {
         //create an object from the Edit_Issue Class to call the methods
         Edit_Issue editIssue=new Edit_Issue();
 
+        //call the request method
         editIssue.updateIssue();
+
+        //call the verification method
         editIssue.verification();
     }
 }

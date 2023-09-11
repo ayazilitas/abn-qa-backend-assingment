@@ -15,7 +15,7 @@ public class Delete_Issue {
         // send the request by using PUT method to DELETE.
 
         response= RestAssured.given().header("PRIVATE-TOKEN","glpat-fzUzvfMidUwg42fNYFhe")
-                .log().all().when().delete("https://gitlab.com/api/v4/projects/49175301/issues/13").prettyPeek();
+                .log().all().when().delete("https://gitlab.com/api/v4/projects/49175301/issues/22").prettyPeek();
 
 
     }

@@ -13,7 +13,10 @@ public class NewIssue {
         //create an object from the New_Issue Class to call the methods
         New_Issue newIssue=new New_Issue();
 
+        //call the request method
         newIssue.newIssue();
+
+        //call the verification method
         newIssue.verification();
 
     }

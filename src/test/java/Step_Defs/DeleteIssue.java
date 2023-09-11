@@ -14,7 +14,10 @@ public class DeleteIssue {
         //create an object from the Delete_Issue Class to call the methods
         Delete_Issue deleteIssue=new Delete_Issue();
 
+        //call the request method
         deleteIssue.deleteIssue();
+
+        //call the verification method
         deleteIssue.verification();
 
 

@@ -21,7 +21,7 @@ public class List_Issues {
         //send the request by using GET method to READ.
 
         response = RestAssured.given().header("PRIVATE-TOKEN", "glpat-fzUzvfMidUwg42fNYFhe")
-                .log().all().when().get("https://gitlab.com/api/v4/projects/49175301/issues");
+                .log().all().when().get("https://gitlab.com/api/v4/projects/49175301/issues").prettyPeek();
 
     }
 

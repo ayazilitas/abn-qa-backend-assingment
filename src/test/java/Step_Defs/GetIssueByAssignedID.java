@@ -13,10 +13,13 @@ public class GetIssueByAssignedID {
     @DisplayName("TC3: Get Issue By Assigned ID")
         public void listIssues(){
 
-        //create an object from the Get Issue By AssignedID Class to call the methods
+        //create an object from the Get Issue Class By AssignedID Class to call the methods
         Get_Issue_By_AssignedID getIssueByAssignedID=new Get_Issue_By_AssignedID();
 
+        //call the request method
         getIssueByAssignedID.getAssignedID();
+
+        //call the verification method
         getIssueByAssignedID.verification();
 
     }
